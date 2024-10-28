@@ -34,7 +34,7 @@ jobs:
           JFROG_CLI_LOG_LEVEL: DEBUG
           # [Mandatory]
           # The GitHub token is automatically generated for the job
-          JF_GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          JF_GIT_TOKEN: ${{ secrets.SECRET_RUNNER }}
           JF_GIT_BASE_BRANCH: ${{ matrix.branch }}
         
           # [Optional, default: https://api.github.com]
