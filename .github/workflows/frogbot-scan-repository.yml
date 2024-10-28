@@ -154,4 +154,4 @@ jobs:
         # Insert to oidc-provider-name the 'Provider Name' defined in the OIDC integration configured in the JPD
         with:
            oidc-provider-name: ${{ vars.JF_OIDC_PROVIDER_NAME }}
-        # Null change to trigger FrogBot scan
+        # Null change to trigger FrogBot
