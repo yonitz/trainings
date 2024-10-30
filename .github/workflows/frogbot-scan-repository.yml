@@ -28,6 +28,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Set up Node.js version 20
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
       - uses: jfrog/frogbot@v2
         env:
           JF_URL: https://${{ vars.JF_NAME }}.jfrog.io
